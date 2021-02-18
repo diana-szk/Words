@@ -3,20 +3,15 @@
 //   text-align: center;
 // }
 
-.center {
-  text-align: center;
-  min-width: 1300px;
+.container {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
-ul {
-  list-style: none;
-  display: inline-block;
-}
-li {
-  // margin-left: 30px;
-  // margin-right: 30px;
-  margin-top: 10px;
-  // letter-spacing: 65px;
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }

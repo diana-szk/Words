@@ -1,13 +1,20 @@
 <!-- 
 <div class="margin" *ngFor="let word of displayWords()">{{word}} </div> -->
 
-<div class="center" *ngFor="let letters of getLetters()">
+<!-- <div class="center" *ngFor="let letters of getLetters()">
     <ul class="style" *ngFor="let letter of letters"  >
         <li >{{letter}}</li>
     </ul>
+</div> -->
+
+
+<div class="container">
+    <div class="center" *ngFor="let letters of getLetters()">
+        <div class="style" *ngFor="let letter of letters" >
+            {{letter}}
+        </div>
+    </div>
 </div>
+    
 
 
-<!-- -trebuie facuta o iteratie prin fiecare cuvant pentru a primi litera 
-     -Daca lenght-ul cuvantului e mai mare de 5, sa zicem, atunci marginea dintre litere sa fie mai mica
-     -rebuie sa adaug padding la fiecare litera in parte -->
