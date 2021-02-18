@@ -3,11 +3,18 @@
 //   text-align: center;
 // }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  height: 100vh;
   display: flex;
+  height: 97vh;
   flex-direction: column;
   justify-content: space-around;
+  // overflow-y: hidden;
 }
 
 .center {
