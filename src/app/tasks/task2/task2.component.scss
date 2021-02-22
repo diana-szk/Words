@@ -1,5 +1,10 @@
-// .splitWord {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-// }
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.splitWord {
+  margin: 0 auto;
+}

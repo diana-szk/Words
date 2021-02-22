@@ -1,24 +1,29 @@
-// .margin {
-//   margin: 40px;
-//   text-align: center;
+// .main {
+//   background-color: green;
+//   object-fit: cover;
 // }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
+// .container {
+//   display: flex;
+//   height: 100vh;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   background-color: orange;
+// }
+
+// .center {
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-around;
+// }
 
 .container {
   display: flex;
-  height: 97vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: space-around;
-  // overflow-y: hidden;
 }
 
 .center {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
 }
