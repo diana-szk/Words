@@ -11,7 +11,7 @@ export class CountComponent implements OnInit {
   ngOnInit(): void {}
 
   onChange(event: any) {
-    const inputValue = event.target.value;
+    const inputValue: number = event.target.value;
     if (inputValue > 0) console.log(inputValue);
   }
 }
