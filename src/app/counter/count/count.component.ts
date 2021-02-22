@@ -12,6 +12,6 @@ export class CountComponent implements OnInit {
 
   onChange(event: any) {
     const inputValue = event.target.value;
-    console.log(inputValue);
+    if (inputValue > 0) console.log(inputValue);
   }
 }
