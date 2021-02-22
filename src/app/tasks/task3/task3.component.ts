@@ -31,18 +31,5 @@ export class Task3Component implements OnInit {
       return allLetters.join('_');
     })
   }
-
-  getLetters(){
-   const letters = this.words.map((word: string) => word.split(''))
-   return letters
-  }
-//   getLetters(): string[]{
-//     return this.words.map((letter: string) => {
-//       const letters: string[] = letter.split('');
-//   }
-// }
- 
- 
-
   }
 
