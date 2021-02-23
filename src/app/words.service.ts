@@ -4,7 +4,6 @@ import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-
 export class WordsService {
   private _words: string[] = [
     'angular',
@@ -29,13 +28,12 @@ export class WordsService {
     // 'array',
     // 'code',
     // 'return',
-    
+
     // 'closure',
     // 'observable',
     // 'array',
     // 'code',
     // 'return',
-    
   ];
 
   constructor() {}
@@ -44,4 +42,20 @@ export class WordsService {
     return of(this._words);
     // "of" produce un observable care emite o singura valoare, pe cea din parametru. se emite instantaneu, in momentul in care te abonezi la el
   }
+
+  /**
+   * approach 1 - return an array that repeats the elements from this._words - as many times as necessary to have a length > @param howMany
+   */
+  getManyWords1(howMany: number) {
+    return this._words.map((word: string) => {
+      if (this._words.length < howMany) {
+        this._words.push(word);
+      }
+    });
+  }
+
+  /**
+   * approach 2 - use another data source - a kind of lipsum package from npm. Generate exactly @param howMany random words with it
+   */
+  // getManyWords2(howMany: number) {}
 }

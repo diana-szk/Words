@@ -1,5 +1,6 @@
 
     <div class="container">
+
         <div class="center" *ngFor="let letters of getLetters()">
             <div class="style" *ngFor="let letter of letters" >
                 {{letter}}
@@ -7,4 +8,4 @@
         </div>
     </div>
 
-    <app-count> </app-count>
+    <app-count (applyCount)="applyCount($event)"> </app-count>
